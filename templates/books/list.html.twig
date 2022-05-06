@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <td>titre</td>
+        <td>auteur</td>
+        <td>année de publication</td>
+        <td>genre</td>
+    </thead>
+    <tbody>
+        {% for index,book in books %}
+            <tr>
+                <td><a href="{{ path('app_show', { id: index }) }}">{{ book.titre }}</a></td>
+                <td><a href="{{ path('app_list_by', { header: 'auteur', value: book.auteur }) }}">{{ book.auteur }}</a></td>
+                <td><a href="{{ path('app_list_by', { header: 'année de publication', value: book['année de publication'] }) }}">{{ book['année de publication'] }}</a></td>
+                <td><a href="{{ path('app_list_by', { header: 'genre', value: book.genre }) }}">{{ book.genre }}</a></td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

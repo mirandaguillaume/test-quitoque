@@ -1,0 +1,20 @@
+
+Temps : 2h
+
+Etant donné une bibliothèque de livres (bibliothèque.csv) qui possède un certain nombre d'informations associées.
+
+Vous devrez créer un mini site web qui permet de lister ces informations et de naviguer à travers
+
+Ce mini site devra répondre aux problématiques suivantes :
+
+Une page principale qui liste les livres :
+Titre, auteur, année de publication, genre
+
+Tous les attributs des livres sont cliquables et mènent à une page complémentaire.
+Titre : renvoie vers la page de détail du livre (Titre, auteur, année de publication, genre)
+Auteur : renvoie vers la page de l'auteur et affiche tous ces livres
+Date de publication : affiche une liste de tous les livres de la même année
+Genre : affiche une liste de tous les livres du même genre
+
+Le choix est libre sur la méthode, l'utilisation d'un framework php et/ou d'une base de données n'est pas indispensable.
+
